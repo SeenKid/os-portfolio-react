@@ -16,7 +16,7 @@ import {
 
 const qualifications = [
     {
-        title: "Diplôme Fédéral de fin de scolarité obligatoire",
+        title: "Diplôme de fin de scolarité obligatoire",
         type: "Diplôme",
         date: "2019",
     },
@@ -24,6 +24,11 @@ const qualifications = [
         title: "Diplôme Pré-apprentissage professionnel",
         type: "Diplôme",
         date: "2021",
+    },
+    {
+        title: "Certificat Fédéral de capacité CFC - développement d’applications",
+        type: "Certificat Fédéral",
+        date: "Prévue en 2025",
     }
 ];
 
@@ -54,7 +59,7 @@ const MainContainer = () => {
                     <h5>Qui suis-je ?</h5>
                     <p>
                         Je suis un étudiant en informatique, passionné par la programmation. <br/><br/>
-                        J'ai découvert la programmation à l'âge de 13 ans, et j'ai commencé à m'intéresser au développement.<br/>
+                        J'ai découvert la programmation à l'âge de 12 ans, et j'ai commencé à m'intéresser au développement.<br/>
                         J'ai eu l'occasion de travailler sur plusieurs projets, et ai pu découvrir de nouvelles technologies.
                     </p>
                 </div>
@@ -320,6 +325,7 @@ const MainContainer = () => {
             <NavbarCategory title={"Réseaux sociaux"}/>
             <NavbarLink title={"Discord"} toOpen={"discord"} active={"true"} window={"contact"}/>
             <NavbarLink title={"Twitter"} toOpen={"twitter"} active={"false"} window={"contact"}/>
+            <NavbarLink title={"Linktree"} toOpen={"linktree"} active={"false"} window={"contact"}/>
 
             <NavbarCategory title={"Autres"}/>
             <NavbarLink title={"Perso"} toOpen={"perso"} active={"false"} window={"contact"}/>
@@ -343,6 +349,14 @@ const MainContainer = () => {
                     <h5>Compte Twitter</h5>
                     <p>
                         Suivez-moi sur mon compte <a href={"https://twitter.com/Seenkidbhop"} target={"_blank"}>Twitter</a>.
+                    </p>
+                </div>
+            </OSTab>
+            <OSTab id={"tab-linktree"} >
+                <div className={"contentContainer"}>
+                    <h5>Mon Linktree</h5>
+                    <p>
+                        Voici tous mes liens importants :  <a href={"https://linktr.ee/seenkid"} target={"_blank"}>linktree</a>.
                     </p>
                 </div>
             </OSTab>
