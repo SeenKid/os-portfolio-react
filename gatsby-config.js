@@ -1,8 +1,8 @@
 module.exports = {
   pathPrefix: '/portfolio',
   siteMetadata: {
-    title: `Clément OZOR, étudiant développeur | ClémentOS`,
-    siteUrl: `https://sn00ww.github.io/portfolio/`
+    title: `SeenKid`,
+    siteUrl: `https://npanel.tk`
   },
   plugins: [
     {
