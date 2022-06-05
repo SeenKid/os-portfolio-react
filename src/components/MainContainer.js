@@ -181,32 +181,36 @@ const MainContainer = () => {
 
             </OSTab>
             <OSTab id={"tab-ide"} >
-
+			<div className={"contentContainer"}>
                     <h5>Webstorm</h5>
                     <div className={"progressBarContainer"}>
                         <div className={"progressBar"} style={{width: "50%"}}/>
                     </div>
-
+			</div>
+				<div className={"contentContainer"}>
                     <h5>Visual Studio Code</h5>
                     <div className={"progressBarContainer"}>
                         <div className={"progressBar"} style={{width: "90%"}}/>
                     </div>
-
+				</div>
+				<div className={"contentContainer"}>
                     <h5>IntelliJ</h5>
                     <div className={"progressBarContainer"}>
                         <div className={"progressBar"} style={{width: "65%"}}/>
                     </div>
-
+				</div>
+				<div className={"contentContainer"}>
                     <h5>PhpStorm</h5>
                     <div className={"progressBarContainer"}>
                         <div className={"progressBar"} style={{width: "60%"}}/>
                     </div>
-
+				</div>
+				<div className={"contentContainer"}>
                     <h5>PyCharm</h5>
                     <div className={"progressBarContainer"}>
                         <div className={"progressBar"} style={{width: "50%"}}/>
                     </div>
-                </div>
+				</div>
             </OSTab>
             <OSTab id={"tab-project-management"} >
                 <div className={"contentContainer"}>
@@ -315,7 +319,6 @@ const MainContainer = () => {
         <OSWindow title={"Contact"} id={"contact"} navbar={<>
             <NavbarCategory title={"Réseaux sociaux"}/>
             <NavbarLink title={"Discord"} toOpen={"discord"} active={"true"} window={"contact"}/>
-            <NavbarLink title={"LinkedIn"} toOpen={"linkedin"} active={"false"} window={"contact"}/>
             <NavbarLink title={"Twitter"} toOpen={"twitter"} active={"false"} window={"contact"}/>
 
             <NavbarCategory title={"Autres"}/>
