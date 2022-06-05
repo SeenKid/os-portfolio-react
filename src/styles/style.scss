@@ -1,0 +1,375 @@
+@font-face {
+  font-family: 'Whitney Book';
+  src: url("../fonts/whitneybook.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Whitney Medium';
+  src: url("../fonts/whitneymedium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Whitney Bold';
+  src: url("../fonts/whitneybold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Whitney Light';
+  src: url("../fonts/whitneylight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Whitney Semibold';
+  src: url("../fonts/whitneysemibold.otf") format("opentype");
+}
+
+$title: 'Whitney Bold';
+$subtitle: 'Whitney Medium';
+$body: 'Whitney Light';
+$titleSize: 2.5rem;
+$subtitleSize: 1.5rem;
+$bodySize: 1rem;
+
+* {
+  color: #2d3436;
+  margin: 0;
+  padding: 0;
+  font-family: $body, sans-serif;
+  font-size: $bodySize;
+  user-select: none;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #bcb6be #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #bcb6be;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+html {
+  height: 100%;
+
+  img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+  }
+
+  body {
+    background: url("../images/background.jpg") center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    #OSHeader {
+      background: #EBEBEC;
+      display: flex;
+      justify-content: space-between;
+      padding: .5rem 1rem;
+
+      #time {
+        font-family: $title, sans-serif;
+      }
+
+      .contentIcons svg {
+        margin: 0 .25rem;
+      }
+    }
+
+    #backgroundTitle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      color: #ededed;
+      font-size: 100pt;
+      font-family: $title, sans-serif;
+      text-shadow: 0 0 40px rgba(255, 255, 255, .7);
+    }
+
+    #OSNavbar {
+      background: rgba(255, 255, 255, .4);
+      position: absolute;
+      bottom: 1rem;
+      left: 50%;
+      transform: translate(-50%, 0);
+      padding: 1rem 2rem;
+      border-radius: 1rem;
+      display: flex;
+      z-index: 999;
+
+      .NavbarIcon {
+        background: #C4C4C4;
+        padding: .75rem;
+        border-radius: .75rem;
+        color: #2C2C2C;
+        cursor: pointer;
+        transition: .2s ease-out;
+        margin: 0 1rem;
+        position: relative;
+
+        &:hover {
+          margin-top: -.25rem;
+          margin-bottom: .25rem;
+          transition: .2s ease-out;
+
+          .NavbarIconTitle {
+            display: block;
+            transition: .2s ease-out;
+          }
+        }
+
+        .NavbarIconTitle {
+          position: absolute;
+          top: -3rem;
+          left: 50%;
+          transform: translate(-50%, 0);
+          padding: .5rem .75rem;
+          border-radius: .25rem;
+          background: #1F1F1F;
+          display: none;
+
+          p {
+            position: relative;
+            text-align: center;
+            color: #fff;
+            font-family: $subtitle, sans-serif;
+            white-space: nowrap;
+            z-index: 1 !important;
+          }
+
+          .TitleCarpet {
+            background: #1F1F1F;
+            height: 1rem;
+            width: 1rem;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            border-radius: .15rem;
+            transform: rotate(45deg) translate(0, 50%);
+            z-index: 0 !important;
+          }
+        }
+
+        svg {
+          font-size: 1.75rem;
+        }
+      }
+    }
+
+    .OSWindow {
+      background: rgba(255, 255, 255, .7);
+      width: 55vw;
+      aspect-ratio: 16/9;
+      position: absolute;
+      top: calc(15% - 35px);
+      left: 5%;
+      transform: translate(-50%, -50%);
+      border-radius: .75rem;
+      z-index: 1;
+      overflow: hidden;
+
+      &[data-show="false"] {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(.7);
+        z-index: -1;
+        transition: .1s ease-out;
+      }
+
+      &[data-show="true"] {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+        transition: .1s ease-out;
+        z-index: 1;
+      }
+
+      .OSWindowHeader {
+        display: flex;
+        justify-content: flex-end;
+        padding: .5rem;
+        cursor: move;
+
+        svg {
+          font-size: 1rem;
+          color: #fff;
+          background: #F96058;
+          padding: .3rem .5rem;
+          border-radius: 50px;
+          cursor: pointer;
+          transition: .15s linear;
+
+          &:hover {
+            background: #e85148;
+            transition: .15s linear;
+          }
+        }
+      }
+
+      .OSWindowNavbar {
+        background: rgba(255, 255, 255, .7);
+        width: 25%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: .5rem .75rem;
+
+        .OSWindowTitle {
+          font-family: $title, sans-serif;
+          font-size: 1.25rem;
+          text-align: center;
+          margin-bottom: 1rem;
+        }
+
+        .NavbarCategory {
+          color: #AEAEB1;
+          font-size: $bodySize;
+          font-family: $subtitle, sans-serif;
+          margin-top: 1rem;
+        }
+
+        .NavbarLink {
+          margin-top: .5rem;
+          padding: .5rem .75rem;
+          background: blue;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: .2s;
+
+          &[data-active="true"] {
+            background: #3287FF;
+            color: #fff;
+            font-family: 'Whitney Semibold', sans-serif;
+
+            path {
+              color: #fff;
+              transition: .2s;
+            }
+          }
+
+          &[data-active="false"] {
+            background: transparent;
+            color: #2d3436;
+
+            path {
+              color: #2d3436;
+              transition: .2s;
+            }
+
+            &:hover {
+              background: #60a1ff;
+              color: #fff;
+              transition: .2s;
+
+              path {
+                color: #fff;
+                transition: .2s;
+              }
+            }
+          }
+        }
+      }
+
+      .OSWindowContent {
+        height: calc(100% - 42px);
+
+        .OSWindowTab {
+          height: 100%;
+          padding-left: calc(25% + 2.25rem);
+          overflow-y: scroll;
+
+          &[data-show="true"] {
+            display: block;
+          }
+
+          &[data-show="false"] {
+            display: none;
+          }
+
+          .contentContainer {
+            background: rgba(255, 255, 255, .7);
+            padding: .5rem .75rem;
+            border-radius: 8px;
+            margin: .5rem 0;
+
+            h5 {
+                font-family: $subtitle, sans-serif;
+                font-size: 1.25rem;
+                margin-bottom: .5rem;
+            }
+
+            span {
+              color: #fff;
+              padding: .25rem .5rem;
+              border-radius: 8px;
+              font-size: 10pt;
+              font-family: 'Whitney Semibold', sans-serif;
+            }
+
+            span:first-of-type {
+              background: #9b59b6;
+            }
+
+            span:nth-of-type(2) {
+              background: #3498db;
+              display: inline-block;
+              margin-left: 1rem;
+            }
+
+            span:last-of-type {
+              background: #2ecc71;
+              display: inline-block;
+              margin-left: 1rem;
+            }
+
+            .progressBarContainer {
+              margin-top: .5rem;
+              margin-bottom: 1rem;
+              display: flex;
+              justify-content: space-between;
+              background: #d8d8d8;
+              border-radius: 8px;
+
+              .progressBar {
+                width: 100%;
+                height: .5rem;
+                background: #2ecc71;
+                border-radius: 8px;
+                transition: .2s;
+
+                &[data-progress="0"] {
+                  background: #e74c3c;
+                }
+
+                &[data-progress="1"] {
+                  background: #f1c40f;
+                }
+
+                &[data-progress="2"] {
+                  background: #2ecc71;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
