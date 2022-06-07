@@ -79,29 +79,35 @@ const MainContainer = () => {
             </OSTab>
             <OSTab id={"tab-Occupations"} title={"About"}>
                 <div className={"contentContainer"}>
+                <div className={"contentContainer"}>
                     <h5>Jeux vidéos</h5>
                     <div className={"progressBarContainer"}>
                         <div className={"progressBar"} style={{width: "35%"}}/>
                     </div>
-
+                    </div>
+                    <div className={"contentContainer"}>
                     <h5>Révisions</h5>
                     <div className={"progressBarContainer"}>
                         <div className={"progressBar"} style={{width: "32%"}}/>
                     </div>
-
+                    </div>
+                    <div className={"contentContainer"}>
                     <h5>Programmation</h5>
                     <div className={"progressBarContainer"}>
                         <div className={"progressBar"} style={{width: "29%"}}/>
                     </div>
-
+                    </div>
+                    <div className={"contentContainer"}>
                     <h5>Musique</h5>
                     <div className={"progressBarContainer"}>
                         <div className={"progressBar"} style={{width: "24%"}}/>
                     </div>
-
+                    </div>
+                    <div className={"contentContainer"}>
                     <h5>Sport</h5>
                     <div className={"progressBarContainer"}>
                         <div className={"progressBar"} style={{width: "17%"}}/>
+                    </div>
                     </div>
                 </div>
             </OSTab>
@@ -329,32 +335,36 @@ const MainContainer = () => {
             </OSTab>
             <OSTab id={"tab-project-management"} >
                 <div className={"contentContainer"}>
-                    
+                <div className={"contentContainer"}> 
                 <h5>GitHub</h5>
                     <div className={"progressBarContainer"}>
                         <div className={"progressBar"} style={{width: "73%"}}/>
                     </div>
-
+                    </div>
+                    <div className={"contentContainer"}>
                     <h5>Trello</h5>
                     <div className={"progressBarContainer"}>
                         <div className={"progressBar"} style={{width: "70%"}}/>
                     </div>
-
+                    </div>
+                    <div className={"contentContainer"}>
                     <h5>MS-Project</h5>
                     <div className={"progressBarContainer"}>
                         <div className={"progressBar"} style={{width: "65%"}}/>
                     </div>
-
+                    </div>
+                    <div className={"contentContainer"}>
                     <h5>JIRA</h5>
                     <div className={"progressBarContainer"}>
                         <div className={"progressBar"} style={{width: "50%"}}/>
                     </div>
-                    
+                    </div>
+                    <div className={"contentContainer"}>
                     <h5>Git</h5>
                     <div className={"progressBarContainer"}>
                         <div className={"progressBar"} style={{width: "46%"}}/>
                     </div>
-
+                    </div>
                 </div>
             </OSTab>
         </OSWindow>
