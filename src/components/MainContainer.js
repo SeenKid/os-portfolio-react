@@ -216,6 +216,11 @@ const MainContainer = () => {
                     <div className={"progressBarContainer"}>
                         <div className={"progressBar"} style={{width: "80%"}}/>
                     </div>
+
+                    <h5>Microsoft SQL Server</h5>
+                    <div className={"progressBarContainer"}>
+                        <div className={"progressBar"} style={{width: "28%"}}/>
+                    </div>
                 </div>
             </OSTab>
             <OSTab id={"tab-languages"} >
@@ -505,7 +510,7 @@ const MainContainer = () => {
             <NavbarLink title={"Linktree"} toOpen={"linktree"} active={"false"} window={"contact"}/>
 
             <NavbarCategory title={"Autres"}/>
-            <NavbarLink title={"Perso"} toOpen={"perso"} active={"false"} window={"contact"}/>
+            <NavbarLink title={"E-Mail"} toOpen={"perso"} active={"false"} window={"contact"}/>
         </>}>
             <OSTab id={"tab-discord"} >
                 <div className={"contentContainer"}>
