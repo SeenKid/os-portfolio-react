@@ -519,7 +519,7 @@ J'ai abandonné le projet.
                 <div className={"contentContainer"}>
                     <h5>Travail réalisé</h5>
                     <p>
-                        Remplacement de pc, gestion du materiel informatique.
+                        Révisions pour les cours (Mathématiques, Français, Informatique...)
                     </p>
                 </div>
             </OSTab>
