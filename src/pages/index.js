@@ -7,7 +7,7 @@ const IndexPage = () => {
     return (
         <>
             <Helmet>
-                <title>SeenKid - développeur</title>
+                <title>sorrow - skxx - seenkid</title>
             </Helmet>
             <MainContainer/>
         </>
