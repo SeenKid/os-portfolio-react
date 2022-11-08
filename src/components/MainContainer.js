@@ -565,7 +565,7 @@ J'ai abandonné le projet.
         </>}>
 		<OSTab id={"tab-Discord"} >
                 <div className={"contentContainer"}>
-                    <h5>Solo.To</h5>
+                    <h5>Discord</h5>
                     <p>
                         Mon ID discord : 374219606673457153
                     </p>
