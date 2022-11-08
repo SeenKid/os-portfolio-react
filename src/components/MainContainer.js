@@ -573,7 +573,7 @@ J'ai abandonné le projet.
             </OSTab>
             <OSTab id={"tab-SoloTo"} >
                 <div className={"contentContainer"}>
-                    <h5>MSolo.To</h5>
+                    <h5>Solo.To</h5>
                     <p>
                         Voici tous mes liens importants :  <a href={"https://solo.to/skxx"} target={"_blank"}>Solo.to</a>.
                     </p>
