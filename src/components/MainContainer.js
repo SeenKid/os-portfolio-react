@@ -563,6 +563,14 @@ J'ai abandonné le projet.
             <NavbarCategory title={"Autres"}/>
             <NavbarLink title={"E-Mail"} toOpen={"perso"} active={"false"} window={"contact"}/>
         </>}>
+		<OSTab id={"tab-Discord"} >
+                <div className={"contentContainer"}>
+                    <h5>Solo.To</h5>
+                    <p>
+                        Mon ID discord : 374219606673457153
+                    </p>
+                </div>
+            </OSTab>
             <OSTab id={"tab-twitter"} >
                 <div className={"contentContainer"}>
                     <h5>Compte Twitter</h5>
