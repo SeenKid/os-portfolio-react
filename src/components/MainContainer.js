@@ -150,7 +150,7 @@ const MainContainer = () => {
 
                     <h5>Bootstrap</h5>
                     <div className={"progressBarContainer"}>
-                        <div className={"progressBar"} style={{width: "30%"}}/>
+                        <div className={"progressBar"} style={{width: "50%"}}/>
                     </div>
 
                     <h5>React</h5>
@@ -179,12 +179,12 @@ const MainContainer = () => {
 
                     <h5>PHP</h5>
                     <div className={"progressBarContainer"}>
-                        <div className={"progressBar"} style={{width: "25%"}}/>
+                        <div className={"progressBar"} style={{width: "35%"}}/>
                     </div>
 
                     <h5>Laravel</h5>
                     <div className={"progressBarContainer"}>
-                        <div className={"progressBar"} style={{width: "10%"}}/>
+                        <div className={"progressBar"} style={{width: "40%"}}/>
                     </div>
 
                 </div>
@@ -225,7 +225,7 @@ const MainContainer = () => {
 
                     <h5>Microsoft SQL Server</h5>
                     <div className={"progressBarContainer"}>
-                        <div className={"progressBar"} style={{width: "28%"}}/>
+                        <div className={"progressBar"} style={{width: "35%"}}/>
                     </div>
                 </div>
             </OSTab>
@@ -294,6 +294,13 @@ const MainContainer = () => {
                     </div>
                 </div>
 
+ 		<div className={"contentContainer"}>
+                    <h5>Pawn</h5>
+                    <div className={"progressBarContainer"}>
+                        <div className={"progressBar"} style={{width: "5%"}}/>
+                    </div>
+                </div>
+
 
             </OSTab>
             <OSTab id={"tab-ide"} >
@@ -306,7 +313,7 @@ const MainContainer = () => {
 				</div>
 
                 <div className={"contentContainer"}>
-                    <h5>IntelliJ</h5>
+                    <h5>IntelliJ Idea</h5>
                     <div className={"progressBarContainer"}>
                         <div className={"progressBar"} style={{width: "65%"}}/>
                     </div>
@@ -333,6 +340,8 @@ const MainContainer = () => {
 				</div>
                 </div>
             </OSTab>
+
+
             <OSTab id={"tab-project-management"} >
                 <div className={"contentContainer"}>
                 <div className={"contentContainer"}> 
@@ -341,6 +350,8 @@ const MainContainer = () => {
                         <div className={"progressBar"} style={{width: "73%"}}/>
                     </div>
                     </div>
+
+
                     <div className={"contentContainer"}>
                     <h5>Trello</h5>
                     <div className={"progressBarContainer"}>
@@ -348,13 +359,13 @@ const MainContainer = () => {
                     </div>
                     </div>
                     <div className={"contentContainer"}>
-                    <h5>MS-Project</h5>
+                    <h5>JIRA</h5>
                     <div className={"progressBarContainer"}>
                         <div className={"progressBar"} style={{width: "65%"}}/>
                     </div>
                     </div>
                     <div className={"contentContainer"}>
-                    <h5>JIRA</h5>
+                    <h5>MS-Project</h5>
                     <div className={"progressBarContainer"}>
                         <div className={"progressBar"} style={{width: "50%"}}/>
                     </div>
@@ -365,6 +376,7 @@ const MainContainer = () => {
                         <div className={"progressBar"} style={{width: "46%"}}/>
                     </div>
                     </div>
+
                 </div>
             </OSTab>
         </OSWindow>
@@ -372,6 +384,7 @@ const MainContainer = () => {
             <NavbarCategory title={"Web"}/>
             <NavbarLink title={"SpaceWatch"} toOpen={"SpaceWatch"} active={"true"} window={"projects"}/>
             <NavbarLink title={"NPANEL"} toOpen={"NPANEL"} active={"false"} window={"projects"}/>
+	<NavbarLink title={"Australis"} toOpen={"Australis"} active={"true"} window={"projects"}/>
         </>} >
             <OSTab id={"tab-SpaceWatch"} >
                 <div className={"contentContainer"}>
@@ -398,7 +411,8 @@ const MainContainer = () => {
                     <h5>Durée de la mission</h5>
 
                     <p>
-                        Depuis le 14 Février 2021 et jusqu'à présent
+                        Depuis le 14 Février 2021 jusqu'au 1er novembre 2022.
+J'ai abandonné le projet.
                     </p>
                 </div>
             </OSTab>
@@ -425,6 +439,33 @@ const MainContainer = () => {
 
                     <p>
                         J'ai travaillé sur ce projet pendant environ 2 mois et demi sérieusement, puis le projet à été en suspend pendant quelques mois.
+                    </p>
+                </div>
+            </OSTab>
+
+
+<OSTab id={"tab-Australis"} >
+                <div className={"contentContainer"}>
+                    <h5>Australis Networks</h5>
+
+                    <p>
+                        <a href={"http://community.australis.fun"} target={"_blank"}>Australis Networks</a> est un réseau de serveurs basés sur le moteur de jeux Source.
+                    </p>
+                </div>
+
+                <div className={"contentContainer"}>
+                    <h5>Ma mission</h5>
+
+                    <p>
+                        Étant fondateur du projet, j'ai pour mission de créer, gérer, développer et maintenir les serveurs afin d'offrir aux joueurs une expérience de jeu optimale.
+                    </p>
+                </div>
+
+                <div className={"contentContainer"}>
+                    <h5>Durée de la mission</h5>
+
+                    <p>
+                        Depuis le 30 juin 2022 jusqu'à présent.
                     </p>
                 </div>
             </OSTab>
@@ -517,39 +558,24 @@ const MainContainer = () => {
             <NavbarCategory title={"Réseaux sociaux"}/>
             <NavbarLink title={"Discord"} toOpen={"discord"} active={"true"} window={"contact"}/>
             <NavbarLink title={"Twitter"} toOpen={"twitter"} active={"false"} window={"contact"}/>
-            <NavbarLink title={"Linktree"} toOpen={"linktree"} active={"false"} window={"contact"}/>
+            <NavbarLink title={"SoloTo"} toOpen={"SoloTo"} active={"false"} window={"contact"}/>
 
             <NavbarCategory title={"Autres"}/>
             <NavbarLink title={"E-Mail"} toOpen={"perso"} active={"false"} window={"contact"}/>
         </>}>
-            <OSTab id={"tab-discord"} >
-                <div className={"contentContainer"}>
-                    <h5>Mon serveur</h5>
-                    <p>
-                        Vous pouvez rejoindre mon serveur Discord à cette adresse <a href={"https://discord.gg/spacewatch"} target={"_blank"}>https://discord.gg/spacewatch</a>.
-                    </p>
-                </div>
-                <div className={"contentContainer"}>
-                    <h5>Compte Discord</h5>
-                    <p>
-                        Vous pouvez m'ajouter sur Discord: <b>SeenKid#1010</b><br/><br/>
-                        Si mon pseudo ne fonctionne pas, voici mon ID discord : <b>692521133345472595</b>
-                    </p>
-                </div>
-            </OSTab>
             <OSTab id={"tab-twitter"} >
                 <div className={"contentContainer"}>
                     <h5>Compte Twitter</h5>
                     <p>
-                        Suivez-moi sur mon compte <a href={"https://twitter.com/Seenkidbhop"} target={"_blank"}>Twitter</a>.
+                        Suivez-moi sur mon compte <a href={"https://twitter.com/sorrowbhop"} target={"_blank"}>Twitter</a>.
                     </p>
                 </div>
             </OSTab>
-            <OSTab id={"tab-linktree"} >
+            <OSTab id={"tab-SoloTo"} >
                 <div className={"contentContainer"}>
-                    <h5>Mon Linktree</h5>
+                    <h5>MSolo.To</h5>
                     <p>
-                        Voici tous mes liens importants :  <a href={"https://linktr.ee/seenkid"} target={"_blank"}>linktree</a>.
+                        Voici tous mes liens importants :  <a href={"https://solo.to/skxx"} target={"_blank"}>Solo.to</a>.
                     </p>
                 </div>
             </OSTab>
