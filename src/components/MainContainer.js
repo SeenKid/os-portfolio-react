@@ -53,7 +53,7 @@ const MainContainer = () => {
 
     return (<>
         <OSHeader />
-        <h1 id={"backgroundTitle"}>SeenKid</h1>
+        <h1 id={"backgroundTitle"}>Yann - Seen</h1>
         <OSNavbar />
         <OSWindow title={"À propos"} id={"about"} navbar={<>
             <NavbarCategory title={"Général"}/>
