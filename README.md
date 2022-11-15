@@ -1,7 +1,7 @@
 <div align="center">
-  <h1><code>OptiTimer</code></h1>
+  <h1><code>SeenKid - Portfolio style Operating System</code></h1>
   <p>
-    <strong>Short Description</strong>
+    <strong>A portfolio that looks like an operating system.</strong>
   </p>
   <p style="margin-bottom: 0.5ex;">
     <img
