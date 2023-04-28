@@ -33,7 +33,7 @@
 
 
 ## Made by ##
-- sorrow
+- SorrowBhop / SeenKid (me)
 
 ## Technical ##
 - Using React JS and Gatsby
