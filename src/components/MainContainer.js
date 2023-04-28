@@ -152,6 +152,11 @@ const MainContainer = () => {
                     <div className={"progressBarContainer"}>
                         <div className={"progressBar"} style={{width: "50%"}}/>
                     </div>
+		    
+		    <h5>Svelte</h5>
+                    <div className={"progressBarContainer"}>
+                        <div className={"progressBar"} style={{width: "25%"}}/>
+                    </div>
 
                     <h5>React</h5>
                     <div className={"progressBarContainer"}>
