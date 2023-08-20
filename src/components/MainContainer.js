@@ -397,7 +397,7 @@ const MainContainer = () => {
 
                     <p>
                         <a href={"https://discord.gg/spacewatch"} target={"_blank"}>SpaceWatch</a> est un serveur discord.
-                        Fondé en 2021, ila grandi jusqu'à attendre 1100 membres en avril 2022. A la base étant un serveur Roblox, il a rapidement
+                        Fondé en 2021, il a grandi jusqu'à attendre 1100 membres en avril 2022. A la base étant un serveur Roblox, il a rapidement
                         changé pour devenir un serveur communautaire un peu plus global.
                     </p>
                 </div>
