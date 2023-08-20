@@ -306,7 +306,6 @@ const MainContainer = () => {
                     </div>
                 </div>
 
-
             </OSTab>
             <OSTab id={"tab-ide"} >
 			<div className={"contentContainer"}>
@@ -346,7 +345,6 @@ const MainContainer = () => {
                 </div>
             </OSTab>
 
-
             <OSTab id={"tab-project-management"} >
                 <div className={"contentContainer"}>
                 <div className={"contentContainer"}> 
@@ -355,7 +353,6 @@ const MainContainer = () => {
                         <div className={"progressBar"} style={{width: "73%"}}/>
                     </div>
                     </div>
-
 
                     <div className={"contentContainer"}>
                     <h5>Trello</h5>
@@ -447,7 +444,6 @@ J'ai abandonné le projet.
                     </p>
                 </div>
             </OSTab>
-
 
 <OSTab id={"tab-Australis"} >
                 <div className={"contentContainer"}>
