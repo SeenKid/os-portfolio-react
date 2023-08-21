@@ -564,7 +564,7 @@ J'ai abandonné le projet.
             <NavbarCategory title={"Autres"}/>
             <NavbarLink title={"E-Mail"} toOpen={"perso"} active={"false"} window={"contact"}/>
         </>}>
-		<OSTab id={"tab-Discord"} >
+		<OSTab id={"tab-discord"} >
                 <div className={"contentContainer"}>
                     <h5>Discord</h5>
                     <p>
