@@ -65,7 +65,7 @@ const MainContainer = () => {
                 <div className={"contentContainer"}>
                     <h5>Qui suis-je ?</h5>
                     <p>
-                        Je suis Yann, un jeune étudiant Suisse de 19 ans. <br/><br/>
+                        Je suis Yann, un jeune étudiant Suisse de 20 ans. <br/><br/>
                         J'ai commencé à coder mes premières lignes assez tôt, j'ai eu, dès mon très jeune âge, un pc entre mes mains.
                         Cependant, j'ai réellement commencé à me mettre au développement vers mes 14 ans. <br/><br/>
                         Je suis aujourd'hui apprenti informaticien développeur, en alternance (entreprise/école professionnelle). <br/><br/>
